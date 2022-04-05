@@ -44,7 +44,10 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'release_date' => 'required|date',
             'description' => 'required',
+            'main_character' => 'required',
+            'runtime' => 'required|integer',
             'image' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
 
@@ -54,6 +57,9 @@ class PostsController extends Controller
 
         Post::create([
             'title' => $request->input('title'),
+            'release_date' => $request->input('release_date'),
+            'main_character' => $request->input('main_character'),
+            'runtime' => $request->input('runtime'),
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
@@ -99,12 +105,18 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'release_date' => 'required|date',
             'description' => 'required',
+            'main_character' => 'required',
+            'runtime' => 'required|integer',
         ]);
 
         Post::where('slug', $slug)
             ->update([
                 'title' => $request->input('title'),
+                'release_date' => $request->input('release_date'),
+                'main_character' => $request->input('main_character'),
+                'runtime' => $request->input('runtime'),
                 'description' => $request->input('description'),
                 'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
                 'user_id' => auth()->user()->id

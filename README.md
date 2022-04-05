@@ -35,7 +35,7 @@ Setup your database credentials in the .env file <br>
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravelblog
+DB_DATABASE=laravelca3blog
 DB_USERNAME={USERNAME}
 DB_PASSWORD={PASSWORD}
 ```

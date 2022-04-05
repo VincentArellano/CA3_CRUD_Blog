@@ -15,6 +15,21 @@
     </span>
 
     <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+    </p>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        {{ $post->title }}
+    </p>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        {{ $post->release_date }}
+    </p>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        {{ $post->main_character }}
+    </p>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
+        {{ $post->runtime }}
+    </p>
+    <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
         {{ $post->description }}
     </p>
 </div>

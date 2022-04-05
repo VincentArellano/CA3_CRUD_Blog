@@ -32,9 +32,30 @@
         <input 
             type="text"
             name="title"
+            placeholder="Title..."
             value="{{ $post->title }}"
             class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
+        
+        <input 
+            type="release_date"
+            name="release_date"
+            placeholder="Release Date (as YYYY-MM-DD)"
+            value="{{ $post->release_date }}"
+            class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
 
+            <input 
+            type="main_character"
+            name="main_character"
+            placeholder="Main Character..."
+            value="{{ $post->main_character }}"
+            class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
+
+        <input 
+            type="runtime"
+            name="runtime"
+            placeholder="Run Time (as minutes)"
+            value="{{ $post->runtime }}"
+            class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
         <textarea 
             name="description"
             placeholder="Description..."
