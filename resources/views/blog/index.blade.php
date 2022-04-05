@@ -45,7 +45,7 @@
                 Released on {{ date('jS M Y', strtotime($post->release_date)) }}
             </p>
             <p class="text-xl text-gray-700 pt-1 pb-10 leading-8 font-light">
-                Movie length of {{ $post->runtime }} minutes
+                A movie length of {{ $post->runtime }} minutes
             </p>
 
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
