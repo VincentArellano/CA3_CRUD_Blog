@@ -35,19 +35,21 @@
             class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
 
         <input 
-            type="release_date"
+            type="date"
             name="release_date"
             placeholder="Release Date (as YYYY-MM-DD)"
             class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
 
         <input 
-            type="main_character"
+            type="text"
             name="main_character"
             placeholder="Main Character..."
             class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
 
         <input 
-            type="runtime"
+            type="number"
+            min="1"
+            max="600"
             name="runtime"
             placeholder="Run Time (as minutes)"
             class="py-20 bg-transparent block border-b-2 w-full h-20 text-xl outline-none">

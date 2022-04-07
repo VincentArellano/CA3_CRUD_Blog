@@ -29,7 +29,7 @@
     <p class="text-xl text-gray-700 font-bold pt-8 pb-1 leading-8 font-light">
         Description
     </p>
-    <p class="text-xl text-gray-700 pt-2 pb-10 leading-8 font-light">
+    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light">
         {{ $post->description }}
     </p>
 </div>
