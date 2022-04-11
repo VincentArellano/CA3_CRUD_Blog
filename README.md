@@ -15,7 +15,7 @@ Setting up your development environment on your local machine: <br>
 ```
 git clone git@github.com:codewithdary/laravel-8-complete-blog.git
 cd laravel-8-complete-blog
-cp .env.example .env
+copy .env.example .env
 composer install
 php artisan key:generate
 php artisan cache:clear && php artisan config:clear
