@@ -26,7 +26,7 @@ php artisan serve
 Create a database <br>
 ```
 mysql
-create database laravelblog;
+create database laravelca3blog;
 exit;
 ```
 
