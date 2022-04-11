@@ -27,11 +27,11 @@
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+             growth is constant, and to become a better developer, it is vital to build on past successes by setting new goals.
             </p>
 
             <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+                New goals should follow the S.M.A.R.T.E.R. acronym, meaning that they should be: Specific: Write down the skills required to become a better web developer and the improvements necessary.Web developers often face challenges along the way. If you have an error in your code, don’t just move on if you can’t find the solution, Be stubborn and figure it out.
             </p>
 
             <a 
