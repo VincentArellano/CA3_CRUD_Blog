@@ -13,8 +13,8 @@ This repository is linked to [this youtube video](https://www.youtube.com/watch?
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
 ```
-git clone git@github.com:codewithdary/laravel-8-complete-blog.git
-cd laravel-8-complete-blog
+git clone https://github.com/VincentArellano/CA3_CRUD_Blog.git
+cd CA3_CRUD_Blog
 copy .env.example .env
 composer install
 php artisan key:generate
@@ -43,11 +43,6 @@ DB_PASSWORD={PASSWORD}
 Migrate the tables
 ```
 php artisan migrate
-```
-
-Add the file below to your project for it to work
-```
-
 ```
 
 ## Contributing
