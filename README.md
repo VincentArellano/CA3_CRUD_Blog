@@ -45,5 +45,10 @@ Migrate the tables
 php artisan migrate
 ```
 
+Add the file below to your project for it to work
+```
+
+```
+
 ## Contributing
 Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
