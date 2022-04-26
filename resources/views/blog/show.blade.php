@@ -13,25 +13,17 @@
 </div>
 <div class="sm:grid grid-cols-2 w-4/5 mx-auto py-15">
     <div class="pt-2 pb-10 leading-8 font-light">
-        <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+        <img src="{{ asset('images/' . $post->image_path) }}" class="min-w-image min-h-image max-w-xs max-h-100" alt="">
     </div>
     <div>
-    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light">
-        Released on {{ date('jS M Y', strtotime($post->release_date)) }}
+    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light mb-16">
+        Released on {{ date('jS M Y', strtotime($post->release_date)) }}. The main character of this film is {{ $post->main_character }}. A movie length of {{ $post->runtime }} minutes. {{ $post->description }}
     </p>
-    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light">
-        The main character of this film is {{ $post->main_character }}
-    </p>
-    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light">
-        A movie length of {{ $post->runtime }} minutes
-    </p>
-    <p class="text-xl text-gray-700 font-bold pt-8 pb-1 leading-8 font-light">
-        Description
-    </p>
-    <p class="text-xl text-gray-700 pt-2 pb-2 leading-8 font-light">
-        {{ $post->description }}
-    </p>
+    <a href="/blog" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold ml-80 py-4 px-8 rounded-3xl">
+    Go Back
+</a>
 </div>
+
 </div>
 
 @endsection 
