@@ -1,11 +1,11 @@
-<footer class="bg-gray-800 py-20 mt-20">
-    <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-gray-700">
+<footer class="bg-red-800 py-20 mt-20">
+    <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-red-700">
         <div>
             <h3 class="text-l sm:font-bold text-gray-100">
                 Pages
             </h3>
 
-            <ul class="py-4 sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 sm:text-s pt-4 text-gray-300">
                 <li class="pb-1">
                     <a href="/">
                         Home
@@ -39,7 +39,7 @@
                 Find Us
             </h3>
 
-            <ul class="py-4 sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 sm:text-s pt-4 text-gray-300">
                 <li class="pb-1">
                     <a href="/">
                         What we do
@@ -68,25 +68,25 @@
                 Latest posts
             </h3>
 
-            <ul class="py-4 sm:text-s pt-4 text-gray-400">
+            <ul class="py-4 sm:text-s pt-4 text-gray-300">
                 <li class="pb-1">
                     <a href="/">
-                        Why we love tech
+                        Why we love Marvel
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why we love design
+                        Why we love movies
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why to use Laravel
+                        Why to use the app
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why PHP is the best
+                        Why Marvel is the best
                     </a>
                 </li>
             </ul>
