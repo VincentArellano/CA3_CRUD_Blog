@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="w-4/5 m-auto text-left">
+<div class="w-4/5 m-auto text-center">
     <div class="py-15">
         <h1 class="text-6xl">
             Create Post
@@ -13,7 +13,7 @@
     <div class="w-4/5 m-auto">
         <ul>
             @foreach ($errors->all() as $error)
-                <li class="w-1/5 mb-4 text-gray-50 bg-red-700 rounded-2xl py-4">
+                <li class="pl-5 w-full mb-4 text-gray-50 bg-red-500 rounded-2xl py-4">
                     {{ $error }}
                 </li>
             @endforeach
