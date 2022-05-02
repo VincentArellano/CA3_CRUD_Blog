@@ -10,8 +10,8 @@
 </div>
 
 @if (session()->has('message'))
-    <div class="w-4/5 m-auto mt-10 pl-2">
-        <p class="w-2/6 mb-4 text-gray-50 bg-green-500 rounded-2xl py-4">
+    <div class="w-9/12 m-auto mt-10 pl-2">
+        <p class="pl-5 w-full mb-4 text-gray-50 bg-red-500 rounded-2xl py-4">
             {{ session()->get('message') }}
         </p>
     </div>
@@ -21,7 +21,7 @@
     <div class="pt-15 w-4/5 m-auto">
         <a 
             href="/blog/create"
-            class="bg-blue-500 uppercase bg-transparent text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
+            class="bg-red-500 uppercase bg-transparent text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
             Create post
         </a>
     </div>
@@ -30,7 +30,7 @@
 @foreach ($posts as $post)
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+            <img src="{{ asset('images/' . $post->image_path) }}" class="min-w-image min-h-image max-w-xs max-h-96" alt="">
         </div>
         <div>
             <h2 class="text-gray-700 font-bold text-5xl pb-4">
@@ -48,7 +48,7 @@
                 A movie length of {{ $post->runtime }} minutes
             </p>
 
-            <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
+            <a href="/blog/{{ $post->slug }}" class="uppercase bg-red-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
                 Keep Reading
             </a>
 
